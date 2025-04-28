@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 340 82% 52%;  /* #e91e63 (pink) */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 187 100% 42%;  /* #00bcd4 (teal) */
+  --secondary-foreground: 0 0% 100%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+  --success: 122 39% 49%;  /* #4caf50 */
+  --warning: 36 100% 50%;  /* #ff9800 */
+  --info: 207 90% 54%;  /* #2196f3 */
+  --dark: 0 0% 20%;  /* #333333 */
+  --light: 0 0% 96%;  /* #f5f5f5 */
+  --danger: 4 90% 58%;  /* #f44336 */
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 340 82% 52%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 187 100% 42%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-gray-100 text-foreground;
+  }
+}
+
+.text-success {
+  color: hsl(var(--success));
+}
+
+.text-warning {
+  color: hsl(var(--warning));
+}
+
+.text-info {
+  color: hsl(var(--info));
+}
+
+.text-danger {
+  color: hsl(var(--danger));
+}
+
+.text-dark {
+  color: hsl(var(--dark));
+}
+
+.text-light {
+  color: hsl(var(--light));
+}
+
+.bg-success {
+  background-color: hsl(var(--success));
+}
+
+.bg-warning {
+  background-color: hsl(var(--warning));
+}
+
+.bg-info {
+  background-color: hsl(var(--info));
+}
+
+.bg-danger {
+  background-color: hsl(var(--danger));
+}
+
+.bg-dark {
+  background-color: hsl(var(--dark));
+}
+
+.bg-light {
+  background-color: hsl(var(--light));
+}
+
+.bg-success-light {
+  background-color: hsla(var(--success), 0.1);
+}
+
+.border-success {
+  border-color: hsl(var(--success));
+}
+
+.border-primary {
+  border-color: hsl(var(--primary));
+}
